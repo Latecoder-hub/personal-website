@@ -1,0 +1,136 @@
+@import 'firefly.css';
+
+@font-face{
+    font-family: 'Antic-Slab';
+    src: url('AnticSlab-Regular.ttf');
+}
+body{
+    background-color: rgba(124, 110, 204, 0.376);
+    margin: 0;
+    
+    
+}
+
+.box1{
+    order: 1;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 60% 15% 15%;
+    border: 1px black solid;
+    grid-gap: 10px;
+    background: linear-gradient(to bottom right, rgb(26,28,32) 0%, rgb(49,54,66) 100%);
+    background-size: 210vh 200vh;
+
+}
+.main-word{   
+    font-size: 50px;
+    padding-left: 25%;
+    padding-top: 10%;
+    color :rgb(230,219,200);
+    font-family: Antic-Slab;
+   
+    cursor:default;
+      
+}
+.main-word >#main1{
+    text-align: left;
+    animation-name: main;
+    animation-duration: 2s; 
+}
+
+.main-word >#main2{
+    animation-name: main;
+    animation-duration: 4s;    
+}
+#main2>span{
+    color:rgb(144, 132, 189) ;   
+}
+.main-word >#main3{
+    animation-name: main;
+    animation-duration: 6s;       
+}
+    @keyframes main{
+        0% {
+        
+            opacity: 0;
+            
+        
+    }
+        20%{
+            opacity: 0.2;
+            filter: blur(8px);
+
+        }
+
+        40%{
+            opacity: 0.4;
+            filter: blur(6px);
+        }
+        60% {
+        
+            opacity: 0.6;
+            filter: blur(4px);
+            
+        
+    }
+        80%{
+            opacity: 0.8;
+            filter: blur(2px);
+
+        }
+
+        100%{
+            opacity: 1;
+            
+        }
+  
+  
+
+    }   
+
+.down_writing{
+    font-size: 30px;
+    text-align: center;
+    padding: 5%;
+    color: white;
+}
+.arrow_down{
+    width: 30px;
+    height: 30px;
+    border: solid white;
+     border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+}
+.arrow1{
+   text-align: center;
+   padding-bottom: 20px;   
+}
+.box2{
+   
+    z-index: 1;
+    
+}
+
+.box3{
+    height: 200vh;
+    background-color: inherit;
+    
+}
+.box4{
+    background-size: 210vh 200vh;
+
+}
+header{
+    background-color: rgba(70, 127, 165, 0.123);  
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+ 
