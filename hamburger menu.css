@@ -50,25 +50,6 @@
  
   top: 20px;
 }
-
-
-.wrapper #menu{
-  display: flex;
-  overflow: hidden;
-  text-decoration: none;
-  text-align: center;
-  justify-items: center;
-  margin-right: 100px;
-  
-}
-.wrapper #menu a{
-  text-decoration: none;
-  list-style: none;
-  margin-left: 1em;
-  font-size: 25px;
-  font-family: Antic-Slab;
-  visibility: hidden;
-}
 .navigation #chbox:checked + .wrapper .hamburger >.div1{
   transform: rotate(-28deg);
   width: 90%;
@@ -89,15 +70,34 @@
   height: 3px;
   border-radius: 1px;
 }
-.navigation #chbox:checked:hover ~ .wrapper{
-  background-color: rgba(121, 90, 179, 0.965);
-  border-radius: 20px;
+
+
+.wrapper #menu{
+  display: flex;
+  overflow: hidden;
+  width: 0;
+  text-decoration: none;
+  text-align: center;
+  justify-items: center;
+  margin-right: 100px;
+  background-color: blueviolet;
+  transition: 0.5 ease;
+  height: 0;
+ 
+  
   
 }
-.navigation #chbox:checked ~ .wrapper #menu>a{
-  visibility: visible;
+.wrapper #menu a{
+  text-decoration: none;
+  list-style: none;
+  margin-left: 1em;
+  font-size: 25px;
+  font-family: Antic-Slab;
   
 }
-.wrapper{
+.navigation #chbox:checked .wrapper #menu:hover{
+ width: 100%;
+ height: 100%;
 
 }
+
