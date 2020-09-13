@@ -7,8 +7,7 @@
 body{
     background-color: rgba(124, 110, 204, 0.376);
     margin: 0;
-    
-    
+    overflow-x: hidden;
 }
 
 .box1{
@@ -19,7 +18,9 @@ body{
     border: 1px black solid;
     grid-gap: 10px;
     background: linear-gradient(to bottom right, rgb(26,28,32) 0%, rgb(49,54,66) 100%);
-    background-size: 210vh 200vh;
+    background-size: 220vh 200vh;
+    overflow: hidden !important;
+    
 
 }
 .main-word{   
